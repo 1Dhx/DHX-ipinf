@@ -15,7 +15,7 @@ cd DHX-ipinf
 ```
 ```
 chmod +x DHXipinf.py
-
+```
 ```
 python DHXipinf.py
 ```
