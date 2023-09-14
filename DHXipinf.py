@@ -58,29 +58,29 @@ except:
 #information to ip
 print ("_____________________________________________")
 print ("###############info ip########################")
-if f["status"] == "success":
-    latitude = f["lat"]
-    longitude = f["lon"]
-    city = f["city"]
-    country = f["country"]
-    isp = f["isp"]
-    status = f["status"]
-    timezone = f["timezone"]
-    AS  = f["as"]
-    org = f["org"]
+if ["status"] == "success":
+    latitude = ["lat"]
+    longitude = ["lon"]
+    city = ["city"]
+    country = ["country"]
+    isp = ["isp"]
+    status = ["status"]
+    timezone = ["timezone"]
+    proxy  = ["proxy"]
+    org = ["org"]
     print ( '\033[91m' + " ip : "+ '\033[34m' + '{ip}')
-    print( '\033[91m' + "country : " +"\033[34m"+ '{country}')
-    print ( '\033[91m' + "city : " + '\033[34m' + '{city}')
-    print( '\033[91m' + 'lon : ' + '\033[34m' + '{longitude}')
-    print('\033[91m' + 'lat : ' + '\033[34m' + '{latitude}')
-    print ('\033[91m' + 'isp : ' + '\033[34m' + '{isp}')
-    print ('\033[91m' + 'status : '+ '\033[34m' + '{status}')
-    print('\033[91m' + 'timezone : ' + '\033[34m' + '{timezone}')
-    print('\033[91m' + 'as : ' + '\033[34m' + '{AS}')
-    print('\033[91m' + "org : " + '\033[34m' + '{org}')
+    print( '\033[91m' + "country : " +"\033[34m"+ f['{country}'])
+    print ( '\033[91m' + "city : " + '\033[34m' + f['{city}'])
+    print( '\033[91m' + 'lon : ' + '\033[34m' + f['{longitude}'])
+    print('\033[91m' + 'lat : ' + '\033[34m' + f['{latitude}'])
+    print ('\033[91m' + 'isp : ' + '\033[34m' + f['{isp}'])
+    print ('\033[91m' + 'status : '+ '\033[34m' + f['{status}'])
+    print('\033[91m' + 'timezone : ' + '\033[34m' + f['{timezone}'])
+    print('\033[91m' + 'as : ' + '\033[34m' + f['{proxy}'])
+    print('\033[91m' + "org : " + '\033[34m' + f['{org}'])
     
 else:
-    status = f["status"]
-    print('\033[91m'+"status:" + "\033[32m" + f" {status}\n")
+    status = ["status"]
+    print('\033[91m'+"status:" + "\033[32m" + f ['status']+'\n')
     print('\033[91m' + "not connect")
     print("try in ather time")
